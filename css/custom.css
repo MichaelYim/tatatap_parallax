@@ -1,0 +1,29 @@
+body {
+  height: 100%; margin: 0; padding: 0;
+/*  background-color:#302B21;*/
+  background: url('/assets/aptitudetestbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bottom-item {
+  background-color: rgba(93, 92, 94, 0.8);
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  height:40px;
+}
+
+.grey-bar {
+  background-color: rgba(70, 70, 70, 1);
+  height:20px;
+}
+
+.top-item {
+  background-color: rgba(93, 92, 94, 0);
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  height:40px;
+}
+
+
