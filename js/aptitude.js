@@ -15,11 +15,11 @@ $(document).ready(function(){
 
   // Opacity change when bottom bar reaches top bar
   $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $(".top-item").animate({backgroundColor:'rgba(93, 92, 94, 0.8)'}, 800);
-      $(".bottom-item").animate({backgroundColor:'rgba(93, 92, 94, 1)'}, 800);
+    if($(window).scrollTop() + $(window).height() == $(document).height()) { //if scrolled to bottom
+      $(".top-item").animate({backgroundColor:'rgba(93, 92, 94, 0.8)'}, 600);
+      $(".bottom-item").animate({backgroundColor:'rgba(93, 92, 94, 1)'}, 600);
     }
-    if($(window).scrollTop() < 50) {
+    if($(window).scrollTop() < 50) { //if scrolled near top
       $(".top-item").css({backgroundColor:'rgba(93, 92, 94, 0)'});
       $(".bottom-item").css({backgroundColor:'rgba(93, 92, 94, 0.8)'});
     }
