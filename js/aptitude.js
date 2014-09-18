@@ -16,8 +16,12 @@ $(document).ready(function(){
   // Opacity change when bottom bar reaches top bar
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $(".top-item").fadeTo(1000, 0.8);
-
+      $(".top-item").animate({backgroundColor:'rgba(93, 92, 94, 0.8)'}, 800);
+      $(".bottom-item").animate({backgroundColor:'rgba(93, 92, 94, 1)'}, 800);
+    }
+    if($(window).scrollTop() < 50) {
+      $(".top-item").css({backgroundColor:'rgba(93, 92, 94, 0)'});
+      $(".bottom-item").css({backgroundColor:'rgba(93, 92, 94, 0.8)'});
     }
   });
 
