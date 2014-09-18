@@ -16,12 +16,14 @@ $(document).ready(function(){
   // Opacity change when bottom bar reaches top bar
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() == $(document).height()) { //if scrolled to bottom
-      $(".top-item").animate({backgroundColor:'rgba(93, 92, 94, 0.8)'}, 600);
-      $(".bottom-item").animate({backgroundColor:'rgba(93, 92, 94, 1)'}, 600);
+      _.debounce($(".top-item").animate({backgroundColor:'rgba(93, 92, 94, 0.8)'}, 600),300);
+      _.debounce($(".bottom-item").animate({backgroundColor:'rgba(93, 92, 94, 1)'}, 600),300);
     }
-    if($(window).scrollTop() < 50) { //if scrolled near top
-      $(".top-item").css({backgroundColor:'rgba(93, 92, 94, 0)'});
-      $(".bottom-item").css({backgroundColor:'rgba(93, 92, 94, 0.8)'});
+    // if scrolled near top, opacity changes back... not in specification
+
+    if($(window).scrollTop() < 100) {
+      _.debounce($(".top-item").css({backgroundColor:'rgba(93, 92, 94, 0)'}), 600);
+      _.debounce($(".bottom-item").css({backgroundColor:'rgba(93, 92, 94, 0.8)'}),600);
     }
   });
 
