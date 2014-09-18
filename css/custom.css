@@ -26,4 +26,14 @@ body {
   height:40px;
 }
 
+.menu-bottom {
+  padding-top:300px;
+  margin-bottom:300px;
+}
+
+.menu-top {
+  position:fixed;
+  width:100%;
+}
+
 
