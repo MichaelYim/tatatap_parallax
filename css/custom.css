@@ -1,5 +1,5 @@
 body {
-  height: 100%; margin: 0; padding: 0;
+  /*height: 100%; margin: 0; padding: 0;*/
 /*  background-color:#302B21;*/
   background: url('/assets/aptitudetestbg.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -10,7 +10,7 @@ body {
   border-color:black;
   border-style:solid;
   border-width:1px;
-  height:10vhpx;
+  height:10vh;
 }
 
 .grey-bar {
@@ -28,7 +28,7 @@ body {
 
 .menu-bottom {
   padding-top:90vh;
-  margin-bottom:300px;
+  margin-bottom:85vh;
 }
 
 .menu-top {
