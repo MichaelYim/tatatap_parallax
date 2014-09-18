@@ -1,8 +1,16 @@
-body {
-  /*height: 100%; margin: 0; padding: 0;*/
-/*  background-color:#302B21;*/
+/*body {
   background: url('/assets/aptitudetestbg.jpg') no-repeat center center fixed;
   background-size: cover;
+}*/
+
+.bcg {
+    background: url('/assets/aptitudetestbg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
 }
 
 .bottom-item {
