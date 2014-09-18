@@ -10,12 +10,12 @@ body {
   border-color:black;
   border-style:solid;
   border-width:1px;
-  height:40px;
+  height:10vhpx;
 }
 
 .grey-bar {
   background-color: rgba(70, 70, 70, 1);
-  height:20px;
+  height:5vh;
 }
 
 .top-item {
@@ -23,11 +23,11 @@ body {
   border-color:black;
   border-style:solid;
   border-width:1px;
-  height:40px;
+  height:10vh;
 }
 
 .menu-bottom {
-  padding-top:300px;
+  padding-top:90vh;
   margin-bottom:300px;
 }
 
